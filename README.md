@@ -53,3 +53,123 @@ else
 }
 
 return 0;
+# loop-program-
+PROGRAM #1
+#include <iostream>
+using namespace std;
+int main() {
+for (int i = 1; i <= 4; i++) {
+ for (int s = 4; s > i; s--) {
+ cout << " ";
+  }
+ for (int j = 1; j <= i; j++) {
+ cout << "*";
+  }
+cout << “\n;
+ }
+ return 0;
+}
+OUTPUT:
+      *
+    **
+  ***
+****
+PROGRAM #2
+#include <iostream>
+using namespace std;
+int main() {
+ for (int i = 4; i >= 1; i--) {
+ for (int j = 1; j <= i; j++) {
+ cout << "* ";
+}
+ cout << endl;
+ }
+  return 0;
+}
+OUTPUT:
+* * * *
+* * *
+* *
+*
+
+
+
+
+PROGRAM #3
+#include <iostream>
+using namespace std;
+int main() {
+ for (int i = 1; i <= 3; i++) {
+ for (int j = 1; j <= 3; j++) {
+ cout << "* ";
+  }
+  cout << endl;
+  }
+ return 0;
+}
+OUTPUT:
+* * *
+* * *
+* * *
+PROGRAM #4
+#include <iostream>
+using namespace std;
+int main() {
+for (int i = 2; i <= 4; i++) {
+for (int j = 1; j <= i; j++) {
+cout << "*";
+}
+cout << endl;
+}
+for (int i = 3; i >= 2; i--) {
+for (int j = 1; j <= i; j++) {
+cout << "* ";
+ }
+cout << endl;
+  }
+return 0;
+}
+
+
+
+OUTPUT:
+**
+***
+****
+***
+**
+
+PROGRAM #5
+#include <iostream>
+using namespace std;
+int main() {
+int n = 4;
+for (int i = 1; i <= n; i++) {
+for (int s = n; s > i; s--) {
+ cout << " ";
+}
+for (int j = 1; j <= i; j++) {
+cout << "* ";
+}
+cout << endl;
+  }
+for (int i = n - 1; i >= 1; i--) {
+for (int s = n; s > i; s--) {
+cout << " ";
+}
+ for (int j = 1; j <= i; j++) {
+cout << "* ";
+}
+cout << endl;
+}
+return 0;
+}
+OUTPUT:
+   *
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
+
